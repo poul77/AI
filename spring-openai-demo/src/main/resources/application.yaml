@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-openai-demo
+  ai:
+    ollama:
+      # The local address from your netstat test
+      base-url: http://localhost:11434
+      chat:
+        options:
+          # The exact model name you found in 'ollama list'
+          model: gemma3:1b
+          # Recommended for 4GB RAM: Set a low temperature for more stable responses
+          temperature: 0.7
+
