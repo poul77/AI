@@ -90,5 +90,16 @@
 			</plugin>
 		</plugins>
 	</build>
-
+    <repositories>
+        <repository>
+            <id>azure-sdk-for-java</id>
+            <url>https://azure.com</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
