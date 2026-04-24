@@ -11,4 +11,16 @@ spring:
           model: gemma3:1b
           # Recommended for 4GB RAM: Set a low temperature for more stable responses
           temperature: 0.7
+  datasource:
+    # Replace <your-server> and <your-db> with your actual resource names
+    url: jdbc:sqlserver://<your-server>.database.windows.net:1433;database=;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;authentication=ActiveDirectoryDefault;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        # Explicitly setting the dialect for SQL Server
+        dialect: org.hibernate.dialect.SQLServerDialect
