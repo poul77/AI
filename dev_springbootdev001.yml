@@ -23,7 +23,7 @@ jobs:
 
       - name: Build with Maven
         # CHANGE 1: Run Maven inside the subfolder
-        run: mvn clean install -f springdemoai/pom.xml
+        run: mvn clean install -f spring-openai-demo/pom.xml
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
