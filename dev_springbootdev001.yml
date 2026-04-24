@@ -3,7 +3,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./springdemoai  # <--- Change this to your subfolder name
+        working-directory: ./spring-openai-demo  # <--- Change this to your subfolder name
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 21
